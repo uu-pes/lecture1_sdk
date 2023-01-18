@@ -35,43 +35,81 @@
 	<h3>Outline</h3>
 
 	<ul class="box-list">
+		<li><i class="ti ti-cpu"></i>Embedded Systems</li>
 		<li><i class="ti ti-affiliate"></i>Organization</li>
-		<li><i class="ti ti-cpu"></i>Hardware + SDK</li>
-		<li><i class="ti ti-schema"></i>State machines</li>
+		<li><i class="ti ti-code-circle-2"></i>Hardware + SDK</li>
+	</ul>
+</section>
+
+<section data-background-image="images/adi-goldstein-EUsVwEOsblE-unsplash.jpg" data-background-opacity="0.2">
+	<h1>Embedded Systems</h1>
+</section>
+
+<section>
+	<h3>Embedded Systems</h3>
+	<ul>
+		<li>Computer systems <emph>integrated</emph> into a larger device</li>
+		<li><emph>HW + SW</emph> tailed to a specific purpose</li>
+		<li>Make up about <emph>99%</emph> of all computer devices</li>
+		<li><emph>Pervasive</emph> character</li>
 	</ul>
 </section>
 
 <section>
-	<h3>Teachers</h3>
-	<div class="third-part">
-		<img class="photo" src="images/Nick.jpeg">
-		<p class="name">Nick</p>
-	</div>
-	<div class="third-part">
-		<img class="photo" src="images/Tobias.jpg">
-		<p class="name">Tobias</p>
-	</div>
-	<div class="third-part">
-		<img class="photo" src="images/Mikolai.jpg">
-		<p class="name">Mikolai</p>
-	</div>
+	<section>
+		<h1>Constraints</h1>
+	</section>
+
+	<section>
+		<ul class="box-list">
+			<li class="fragment fade-up"><i class="ti ti-alarm"></i>Timing</li>
+			<li class="fragment fade-up"><i class="ti ti-coin-euro"></i>Cost</li>
+			<li class="fragment fade-up"><i class="ti ti-weight"></i>Weight</li>
+			<li class="fragment fade-up"><i class="ti ti-battery-2"></i>Power</li>
+			<li class="fragment fade-up"><i class="ti ti-device-sd-card"></i>Memory</li>
+			<li class="fragment fade-up"><i class="ti ti-cpu"></i>Computation power</li>
+		</ul>
+	</section>
 </section>
 
 <section>
-	<h3>Course structure</h3>
-	<div class="fragment fade-up box">
-		Part 1: 1DT106, Period 3<br>
-		12 lectures, 4 labs 
-	</div>
-	<div class="fragment fade-up box">
-		Exam: March 15th, 2023
-	</div>
-	<div class="fragment fade-up box">
-		Part 2: 1DT108, Period 4<br>
-		(separate application required)
-	</div>
+	<section>
+		<h1>Organization</h1>
+	</section>
+
+	<section>
+		<h3>Teachers</h3>
+		<div class="third-part">
+			<img class="photo" src="images/Nick.jpeg">
+			<p class="name">Nick</p>
+		</div>
+		<div class="third-part">
+			<img class="photo" src="images/Tobias.jpg">
+			<p class="name">Tobias</p>
+		</div>
+		<div class="third-part">
+			<img class="photo" src="images/Mikolai.jpg">
+			<p class="name">Mikolai</p>
+		</div>
+	</section>
+
+	<section>
+		<h3>Course structure</h3>
+		<div class="fragment fade-up box">
+			Part 1: 1DT106, Period 3<br>
+			12 lectures, 4 labs 
+		</div>
+		<div class="fragment fade-up box">
+			Exam: March 15th, 2023
+		</div>
+		<div class="fragment fade-up box">
+			Part 2: 1DT108, Period 4<br>
+			(separate application required)
+		</div>
+	</section>
 </section>
 
+<section>
 <section data-background-color="white">
 	<img class="r-stretch" src="images/cat.jpeg">
 </section>
@@ -135,6 +173,9 @@
 	</ul>
 </section>
 
+</section>
+
+<section>
 <section>
 	<h1>Hardware</h1>
 </section>
@@ -147,7 +188,7 @@
 </section>
 
 <section>
-	<h3>Raspberry Pi Pico</h3>
+	<h3>RP2040</h3>
 	<ul>
 		<li>Dual-core ARM Cortex-M0+</li>
 		<li>264kB on-chip SRAM</li>
@@ -176,7 +217,9 @@
 		</div>
 	</div>
 </section>
+</section>
 
+<section>
 <section>
 	<h3>Pico SDK</h3>
 	<div class="fragment fade-up citation">
@@ -267,6 +310,15 @@
 		<li><a href="https://raspberrypi.github.io/pico-sdk-doxygen/index.html">https://raspberrypi.github.io/pico-sdk-doxygen/index.html</a></li>
 	</ul>
 </section>
+</section>
+
+<section>
+	<h2>Let's have a look at studium</h2>
+</section>
+
+<section>
+	<h1>Thanks for today!</h1>
+</section>
 
 <!-- END SLIDES -->
 </div>
@@ -282,6 +334,8 @@
 			Reveal.initialize({
 				hash: true,
 				controlsTutorial: false,
+				progress: true, 
+				navigationMode: 'linear',
 				transition: 'fade', 
 				slideNumber: 'c', 
 				pdfSeparateFragments: false, 
