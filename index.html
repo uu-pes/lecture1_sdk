@@ -28,12 +28,14 @@
 <!-- BEGIN SLIDES -->
 <section data-background-image="images/robin-glauser-zP7X_B86xOg-unsplash.jpg" data-background-opacity="0.1">
 	<h2>1DT106 - Programming Embedded Systems</h1>
-		<h4>Nikolaus Huber</h4>
+		<h4>Paul Fiterau</h4>
 </section>
 
 <section data-background-image="images/background.jpg" data-background-opacity="0.2">
 	<h1>Lecture 1</h1>
-	<p>Nikolaus Huber</p>
+	<p>Paul Fiterau</p>
+	<br/>
+	<footer>Based on slides by Nikolaus Huber</footer>
 </section>
 
 <section>
@@ -68,6 +70,7 @@
 	<section>
 		<ul class="box-list">
 			<li class="fragment fade-up"><i class="ti ti-alarm"></i>Timing</li>
+			<li class="fragment fade-up"><i class="ti ti-book"></i>Compliance</li>
 			<li class="fragment fade-up"><i class="ti ti-coin-euro"></i>Cost</li>
 			<li class="fragment fade-up"><i class="ti ti-weight"></i>Weight</li>
 			<li class="fragment fade-up"><i class="ti ti-battery-2"></i>Power</li>
@@ -84,17 +87,22 @@
 
 	<!-- <section>
 		<h3>Teachers</h3>
-		<div class="third-part">
-			<img class="photo" src="images/Nick.jpeg">
-			<p class="name">Nick</p>
+		<div class="fourth-part">
+			<img class="photo" src="images/teachers/abdel.jpg">
+			<p class="name">Abdel</p>
 		</div>
-		<div class="third-part">
-			<img class="photo" src="images/Tobias.jpg">
-			<p class="name">Tobias</p>
+		<div class="fourth-part">
+			<img class="photo" src="images/teachers/huang.jpg">
+			<p class="name">Huang</p>
 		</div>
-		<div class="third-part">
-			<img class="photo" src="images/Mikolai.jpg">
-			<p class="name">Mikolai</p>
+		<div class="fourth-part">
+			<img class="photo" src="images/teachers/niu.jpg">
+			<p class="name">Niu</p>
+		</div>
+		<div class="fourth-part">
+			<img class="photo" src="images/teachers/paul.jpg">
+				<p class="name">Paul</p>
+			<img>
 		</div>
 	</section> -->
 
@@ -105,7 +113,7 @@
 			&plusmn;12 lectures, 4 labs
 		</div>
 		<div class="fragment fade-up box">
-			Exam: March 11th, 2024
+			Exam: March 17th, 2025
 		</div>
 		<div class="fragment fade-up box">
 			Part 2: 1DT108, Period 4<br>
@@ -122,11 +130,17 @@
 <section>
 	<h3>Lab assignments</h3>
 	<ul>
-		<li>Labs are done <emph>individually</emph></li>
+		<li>Labs are done <emph>in groups of two</emph></li>
+		<ul>
+			<li>Join a group on Studium</li>
+			<li>Check Group Making discussion for help</li>
+		</ul>
 		<li>Assessment:</li>
 		<ul>
+			<li>Pass/Fail</li>
 			<li>Must show a <emph>working solution</emph> to one of the teachers</li>
 			<li>Code upload on Studium => <emph>plagiarism check</emph></li>
+			<li>Grading is individual => <emph>every group member should understand their solution</emph></li>
 		</ul>
 	</ul>
 </section>
@@ -144,7 +158,7 @@
 <section>
 	<h3>Lab kits</h3>
 	<ul>
-		<li>Distributed during first lab</li>
+		<li>Distributed during first lab to <emph>each student</emph></li>
 		<li>Yours for the duration of the course</li>
 		<li>If something breaks => inform teacher/TAs</li>
 		<li class="fragment highlight-red">Property of Uppsala University</li>
@@ -156,18 +170,35 @@
 	<ul>
 		<li>On TimeEdit (look for 1DT106)</li>
 		<li>On Studium (left menu)</li>
+		<li>On Schedule spreadsheet (from Studium page)</li>
 		<li>For each lab => 2 sessions</li>
 		<ul>
-			<li>Marked as <emph>Lab X.1</emph> and <emph>Lab X.2</emph></li>
-			<li>You can work individually between the sessions</li>
+			<li>Marked as <emph>Lab X.1</emph> (3h45m) and <emph>Lab X.2</emph> (1h45m)</li>
+			<li>You can work between the sessions</li>
 		</ul>
+	</ul>
+</section>
+
+<section>
+	<h3>Lab deadlines and policies</h3>
+	<ul>
+		<li>Deadlines marked on Studium</li>
+		<li>Solution Lab X can be presented in:</li>
+		<ul>
+			<li>Lab X.1</li>
+			<li>Lab X.2</li>
+			<li>Lab X+1.1 (if exists)</li>
+			<li>Extra Lab</li>
+		</ul>
+		<li>=> <emph>Work hard not to fall behind!</emph></li>
+		<li>Help can be requested during any lab, for any lab</li>
 	</ul>
 </section>
 
 <section>
 	<h3>Examination</h3>
 	<ul>
-		<li>March 11th, 2024</li>
+		<li>March 17th, 2024</li>
 		<li>On INSPERA</li>
 		<li>60 Points in total</li>
 		<ul>
@@ -193,14 +224,15 @@
 </section>
 
 <section>
-	<h3>RP2040</h3>
+	<h3>RP<font color="gray">2</font><font color="brown">0</font>40</h3>
 	<ul>
-		<li>Dual-core ARM Cortex-M0+</li>
+		<li><font color="gray">Dual</font>-core ARM Cortex-M<font color="brown">0</font>+</li>
 		<li>264kB on-chip SRAM</li>
 		<li>2MB on-board flash</li>
 		<li>2x UART, 2x SPI, 2x I2C, 16x PWM</li>
 		<li>Programmable I/O</li>
 		<li>USB-drive bootloader</li>
+		<li>For more, <a href="https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf">check datasheet</a></li>
 	</ul>
 </section>
 
@@ -244,6 +276,7 @@
 			<li class="fragment fade-up">Hardware support libraries (hardware_xxx)</li>
 			<li class="fragment fade-up">Hardware struct/register libraries</li>
 		</ul>
+		<li class="fragment fade-up">For more, <a href="https://www.raspberrypi.com/documentation/pico-sdk/">check SDK documentation</a></li>
 	</ul>
 </section>
 
@@ -264,18 +297,20 @@
 
 <section>
 	<h3>main.c</h3>
-	<pre class="C"><code data-trim data-noescape data-line-numbers="|1|3|5-13|6,7|10|11|">
+	<pre class="C"><code data-trim data-noescape data-line-numbers="|1|3|5-15|6,7|10-13|">
 		#include "pico/stdlib.h"
 
 		const static uint led_pin = 0; 
 
 		int main() {
 			gpio_init(led_pin); 
-			gpio_set_dir(led_pin, GPIO_OUT); 
-
-			for(;;){
-				gpio_xor_mask(1 << led_pin); 
-				sleep_ms(500); 
+			gpio_set_dir(led_pin, GPIO_OUT);
+			
+			while (true) {
+				gpio_put(led_pin, true);
+				sleep_ms(500);
+				gpio_put(led_pin, false);
+				sleep_ms(500);
 			}
 		}
 	</code></pre>
@@ -309,10 +344,15 @@
 </section>
 
 <section>
+	<h3>Raspberry Pi Pico VS Code Extension</h3>
+	<img src="images/vscode_ext.png">
+</section>
+
+<section>
 	<h3>Going further</h3>
 	<ul>
 		<li>Look at the recommend reading</li>
-		<li><a href="https://raspberrypi.github.io/pico-sdk-doxygen/index.html">https://raspberrypi.github.io/pico-sdk-doxygen/index.html</a></li>
+		<li><a href="https://www.raspberrypi.com/documentation/pico-sdk/">https://www.raspberrypi.com/documentation/pico-sdk/</a></li>
 	</ul>
 </section>
 </section>

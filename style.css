@@ -47,6 +47,11 @@ emph {
     float: left; 
 }
 
+.fourth-part {
+    width: 25%; 
+    float: left; 
+}
+
 .logo {
     width: 10%; 
     max-width: 100px;
